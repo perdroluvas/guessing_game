@@ -4,12 +4,14 @@ use rand::Rng;
 fn main() {
 
    println!("Adivinhe o numero!!");
-   let secret_number: u32 = rand::thread_rng().gen_range(1..=100);
-   println!("O numero secreto é:: {secret_number}");
+   let secret_number: u32 = rand::thread_rng().gen_range(1..=6);
+   //println!("O numero secreto é:: {secret_number}");
+   println!("Escreva seu chute!");
+   println!("Dica: Roleta Russa.");
 
    loop{
 
-      println!("Escreva seu chute!\n Dica, é um número de 1 a 100!");
+
       let mut guess = String::new();
 
       io::stdin()
